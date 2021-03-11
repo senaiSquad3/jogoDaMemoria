@@ -91,3 +91,12 @@ function reset(eIgual){
 aleatoria();
 
 cartas.forEach(c => c.addEventListener('click', virar));
+
+var contador = document.querySelector('.badge');
+
+
+document.querySelector('#tabuleiro').addEventListener('click', function(){
+  var numero = parseInt(contador.textContent) + 1 ;
+  contador.textContent = numero  ;
+  
+});
