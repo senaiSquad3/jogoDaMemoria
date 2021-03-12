@@ -1,0 +1,89 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    height: 100vh;
+    background-image: url("imgss/backgroundOnePiece.png");
+}
+
+.item1 { grid-area: header; }
+.item2 { grid-area: main; }
+.item4 { grid-area: menu; }
+.item3 { grid-area: footer; }
+
+.grid-container{
+
+	display: grid;
+    grid-template-areas: 'header header header header header'
+                         'main main main menu menu' 
+                         'footer footer footer footer footer ';	
+
+}
+.grid-container > .item1{
+    display: flex;
+    width: auto;
+    background-color: #E3771B;
+    text-align: center;
+    margin-top: 1%;
+    font-size: 4vh;
+    font-family: 'Bungee Shade', cursive;
+    
+}
+
+.grid-container > .item4{
+    display: flex;
+    width: auto;
+    text-align: center;
+    margin-top: 10%;
+    font-size: 5vh;
+    font-family: 'Bungee Shade', cursive;
+    
+}
+
+
+.item1 > h1{
+    margin-left: 15%;
+}
+
+.img-background {
+    z-index: -1;
+    position: relative;
+}
+
+
+#tabuleiro{
+    width: 50vw;
+    height: 75vh;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.memory-card{
+    width: 23%; 
+    position: relative;
+    margin: 5px;
+    transform-style: preserve-3d;
+    transition: 0.4s;
+    
+}
+.memory-card:active{
+    transform: scale(0.97);
+}
+.memory-card.virar{
+    transform: rotateY(180deg);
+}
+
+.frente-carta,
+.fundo-carta{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.frente-carta{
+    transform: rotateY(180deg);
+}
+
+  
