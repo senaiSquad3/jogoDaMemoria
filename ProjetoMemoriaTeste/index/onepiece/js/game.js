@@ -150,11 +150,9 @@ var contador = document.querySelector('.badge');
 
 
 document.querySelector('#tabuleiro').addEventListener('click', function(){
-  bloqueio = false;
-  if(!gameStarted){ 
+   
   var numero = parseInt(contador.textContent) + 1 ;
   contador.textContent = (numero /2) + (numero /2) ;
-  gameStarted = true;
-};
+ 
 });
 
