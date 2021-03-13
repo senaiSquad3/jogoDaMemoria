@@ -86,6 +86,17 @@ body {
     color: black;
 
 }
+.plays{
+    position: absolute; 
+    margin-top: 910px ;
+    margin-left: 800px;
+    text-align: center;
+    font-size: 32px;
+    font-family: 'Bungee Shade', cursive;
+ }
+ .badge{
+     text-align: center;   
+ }
 
 
 
