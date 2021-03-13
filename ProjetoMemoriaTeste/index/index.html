@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style-index.css">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Memória</title>
+</head>
+<body>
+
+    <div class="regras-jogo">
+        <h1>Regras:</h1>
+        <p>Você deverá virar duas cartas.</p>
+        <p>Caso forem cartas diferentes, você jogará de novo até o tempo acabar.</p>
+        <p>O jogo acaba assim que você conseguir encontrar todos os pares.</p>
+        <p>Boa Sorte!!</p>
+        <h1>Escolha o seu deck:</h1>
+    </div>
+    
+    <script>
+        function startGame(gameType){
+            
+
+            if(gameType === "deck") {
+                window.location.href="deckgame/deck.html";
+            }else if (gameType === "onepiece") {
+                window.location.href="onepiece/onepiece.html";
+            } 
+        } 
+        
+    </script>
+
+    <div class="control-panel"> 
+        <button onclick="startGame('deck')">Baralho</button>
+        <button onclick="startGame('onepiece')">One Piece</button>
+   </div>
+
+
+</body>
+</html>

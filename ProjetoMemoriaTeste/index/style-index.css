@@ -1,0 +1,39 @@
+body {
+    background-image: url('background-index.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    
+   
+}
+
+
+.regras-jogo {
+    font-family: 'VT323', monospace;
+    margin: auto;
+    text-align: center;
+    margin-top: 1%;
+    margin-left: 35%;
+    height: 2%;
+    width: 30%;
+}
+
+.regras-jogo h1 {
+    font-size: 52px;
+    color: #6A8A99;
+    margin-top: 2%;
+}
+
+
+.regras-jogo p {
+    font-size: 32px;
+    color: #577054;
+    
+}
+
+.control-panel {
+    text-align: center;
+    margin-top: 2%;
+}

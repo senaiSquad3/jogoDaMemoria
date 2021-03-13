@@ -1,0 +1,87 @@
+
+body {
+    height: 100vh;
+    display: flex;
+    background-image: url('../imgs/backgroundOnePiece.png');
+    
+    
+}
+
+.titulo-principal {
+    width: 100%;
+    background-color: #E3771B;
+    height: 150px;
+    text-align: center;
+    margin-top: 2%;
+}
+
+.titulo-principal h1 {
+    margin-top: 3%;
+    font-size: 52px;
+    font-family: 'Bungee Shade', cursive;
+}
+
+#tabuleiro-deck {
+    width: 640px;
+    height: 640px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    left: 30%;
+    top: 25%;
+    position: absolute;
+   
+}
+
+.memory-card {
+    width: 25%;
+    width: 25%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: 0.5s;
+    
+}
+
+.memory-card:active {
+    transform: scale(0.97);
+}
+
+.memory-card.virar{
+    transform: rotateY(180deg);
+}
+
+.fundo-carta, .frente-carta {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    
+}
+
+.frente-carta {
+    transform: rotateY(180deg);
+}
+
+
+
+#timer {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    position: absolute;
+    top: 30%;
+    right: 2rem;
+    color: black;
+}
+
+.control-panel-deck {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    position: absolute;
+    top: 33%;
+    right: 2rem;
+    color: black;
+
+}
