@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Jogo da Memória</title>
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" 
+           integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" 
+           crossorigin="anonymous"
+    
+    />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap" >
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="./memoria.css" />
+    <script src="./memoria.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Jogo da Memória</h1>
+            <div class="row">
+                <div id="controle" class="col">
+                    <label for="deck-themes">Temas</label>
+                    <select id="deck-themes" onchange="alteraTema(this.value)">
+                        <option value= 4>Cartas</option> 
+                        <option value= 3>Coringa</option>
+                        <option value= 1>Pokémon</option>
+                        <option value= 2>One Piece</option>
+                    </select>
+                </div>
+            </div>
+        <div id="memoria">
+            <div class="row">
+                <div class="col">
+                    <p id="timer">00:00</p>
+                </div>
+            </div>
+            <div id="imagens">
+                <div class="row">
+                    <div class="col-3">
+                        <img id="i0" />  
+                    </div>
+                    <div class="col-3">
+                        <img id="i1" />  
+                    </div>
+                    <div class="col-3">
+                        <img id="i2" />  
+                    </div>
+                    <div class="col-3">
+                        <img id="i3" />  
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-3">
+                        <img id="i4" />  
+                    </div>
+                    <div class="col-3">
+                        <img id="i5" />  
+                    </div>
+                    <div class="col-3">
+                        <img id="i6" />  
+                    </div>
+                    <div class="col-3">
+                        <img id="i7" />  
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-3">
+                        <img id="i8" />  
+                    </div>
+                    <div class="col-3">
+                        <img id="i9" />  
+                    </div>
+                    <div class="col-3">
+                        <img id="i10" />  
+                    </div>
+                    <div class="col-3">
+                        <img id="i11" />  
+                    </div>
+                </div>
+            </div>
+            <div id="rodape" >
+                <div class="row">
+                    <div   class="col">
+                      Total de Cliques = <span id="contagem">0</span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div   class="col">
+                         <button id="btInicio" type="button" class="btn btn-primary btn-lg">
+                               Iniciar
+                         </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

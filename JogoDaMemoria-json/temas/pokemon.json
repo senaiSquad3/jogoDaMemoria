@@ -1,0 +1,10 @@
+{
+    "cover" : "pokebola.png",
+    "cartas": [ "./imgs/pika1.png",
+                "./imgs/pika2.png", 
+                "./imgs/pika3.png", 
+                "./imgs/pika4.png", 
+                "./imgs/pika5.png", 
+                "./imgs/pika6.png"],
+    "back" : "./imgs/fundopoke.png"
+}

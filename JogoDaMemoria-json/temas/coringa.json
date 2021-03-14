@@ -1,0 +1,10 @@
+{
+    "cover" : "fundocor.png",
+    "cartas": [ "./imgs/cor1.png",
+                "./imgs/cor2.png", 
+                "./imgs/cor3.png", 
+                "./imgs/cor4.png", 
+                "./imgs/cor5.png", 
+                "./imgs/cor6.png"],
+    "back" : "./imgs/backgroundCoringa.png"
+}

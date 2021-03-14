@@ -1,0 +1,10 @@
+{
+    "cover" : "versoBaralho.png",
+    "cartas": [ "./imgs/bar1.png",
+                "./imgs/bar2.png", 
+                "./imgs/bar3.png", 
+                "./imgs/bar4.png", 
+                "./imgs/bar5.png", 
+                "./imgs/bar6.png"],
+    "back" : "./imgs/backgroundBaralho.png"
+}
